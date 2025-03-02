@@ -6,7 +6,7 @@ import { ring } from 'ldrs';
 function Form(){
 
     ring.register();
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
 
     const { language } = useContext(Context)
 
