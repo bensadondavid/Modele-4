@@ -8,10 +8,7 @@ function BeachParty(){
     const { language } = useContext(Context)
 
     return(
-
-        <div className="beach">
             <div className="beach-card">
-                <img src="fleur-fonce-haut.png" className='fleur-fonce-haut' />
                 <h1 className='beach-title'>LA POOL PARTY</h1>
                 <img src="beach-logo.png" className='beach-logo'/>
                 <p className='beach-text'>Afin de prolonger ces precieux instants avec vous </p>
@@ -26,10 +23,7 @@ function BeachParty(){
                 <p className='beach-dress-code'>DRESS CODE : WHITE</p>
                 <Waze name={'waze-beach'} lat={48.8525} long={2.3372} iconWidth='18px' iconHeight='25px' iconColor='##806548' />
                 <SaveTheDate name={'save-the-date-beach'} date={[2024, 6, 3, 12, 0]} iconColor='#806548' iconHeight='18px' iconWidth='21px'/>
-                <img src="fleur-fonce-bas.png" className='fleur-fonce-bas' />
             </div>
-        </div>
-
     )
 }
 

@@ -35,12 +35,12 @@
 .entry{
     height: 100%;
     width: 100%;
-    background-image: url('/fond-av.png');
+    background-image: url('/fond-vert.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -52,7 +52,7 @@
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-    color: #271A11;
+    color: #183C28;
 }
 
 .logo-entry{
@@ -62,16 +62,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
+    gap: 10px;
 }
 
-.logo-av-entry{
-    height: 180px;
-    width: 350px;
+.logo-y-l-entry{
+    height: 200px;
+    width: 200px;
 }
 
 .entry-date{
-    font-family: "Alice", serif;
-    color: #5D412A;
+    font-family: "Cormorant Garamond", serif;
+    color: #183C28;
+    font-size: x-large;
 }
 
 @font-face {
@@ -81,27 +84,23 @@
     font-style: normal;
 }
 
-.entry-noms{
+.entry-noms, .and{
     width: 100%;
     height: fit-content;
     font-family: 'Amsterdam', sans-serif;
     font-size: 50px;
     text-align: center;
-    color: #5D412A;
+    color: #183C28;
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.3);
+    font-weight: 400;
 }
-
-.and{
-    font-size: 20px;
-    margin: auto 30px auto auto;
-}
-
 
 .countdown{
     width: 90%;
     height: fit-content;
     margin: 0 auto;
-    color: #402E20;
-    font-family: "Antic Didone", serif;
+    color: #183C28;
+    font-family: "Cormorant Garamond", serif;
     font-weight: lighter;
     display: flex;
     flex-direction: row;
@@ -111,8 +110,8 @@
 
 .time{
     text-align: center;
-    font-size: small;
-    background-color: rgba(198, 165, 138, 0.39);
+    font-size: x-large;
+    background-color: transparent;
     border-radius: 28px;
     height: 65px;
     width: 65px;
@@ -122,22 +121,27 @@
     text-align: center;
 }
 
-.invit-link{
+.invit-link {
+    color: #183C28 ;
+    font-family: "Cormorant Garamond", serif;
+    font-size: x-large;
+    text-decoration: none;
     height: fit-content;
-    transform: translateY(-20px);
+    transform: translateY(70px);
 }
 
-.invit-button{
-    height: 60px;
-    width: 200px;
-    background-color: rgba(198, 165, 138, 0.39);
-    color: #271A11;
-    border: none;
-    border-radius: 30px;
-    font-family: "Antic Didone", serif;
-    font-size: medium;
+.fleurs-entry{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.fleur-entry-gauche, .fleur-entry-droite{
+    width: 150px;
+    height: 150px;
+}
 
 /* Home */
 
@@ -146,13 +150,30 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    background-image: url('/fond-vert.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.logo-home{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    transform: translateY(30px);
+}
+
+.fleurs-separation{
+    height: 300px;
+    width: 100%;
 }
 
 .musique button{
     height: 40px;
     width: 40px;
-    border: solid black 1px;
+    border: solid  #183C28 1px;
     border-radius: 50%;
     position: fixed;
     bottom: 30px;
@@ -161,89 +182,55 @@
     background-color: transparent;
 }
 
-/* Mairie */
-
-.mairie{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-haut.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+.logo-petit{
+    width: 40px;
+    height: 40px;
 }
+
+/* Mairie */
 
 .mairie-card{
     height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 120px 0;
-    background-color: #E1C3A3;
     border: none;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
+    transform: translateY(-10%);
 }
-
-.fleur-fonce-haut{
-    width: 180px;
-    height: 230px;
-    position: absolute;
-    top: -10px;
-    left: -15px;
-    transform: rotate(45deg);
-}
-
 
 .mairie-title{
     height: fit-content;
-    color: #806548;
-    font-family: "Antic Didone", serif;
+    color: #183C28;
+    font-family: 'Amsterdam', sans-serif;
     font-weight: 400;
     text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
 }
 
-.bagues-mairie{
-    width: 40px;
-    height: 30px;
-}
 
 .mairie-noms{
-    color: #806548;
-    font-family: 'Amsterdam', sans-serif;
     display: flex;
     flex-direction: row;
-    margin: 90px auto auto auto;
+    gap: 20px;
 }
 
-.mairie-nom-1{
-    transform: translateY(-70px);
+.mairie-nom-1, .mairie-nom-2, .mairie-and{
+    width: 100%;
+    height: fit-content;
+    font-family: 'Amsterdam', sans-serif;
     font-size: 50px;
-    font-weight: 100;
+    text-align: center;
+    color: #183C28;
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.3);
 }
 
 .mairie-and{
-    font-weight: 100;
+    transform: translateX(10px);
 }
-
-.mairie-nom-2{
-    height: fit-content;
-    transform: translateY(10px);
-    font-size: 50px;
-    font-weight: 100;
-}
-
 
 .mairie-text{
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
-    color: #806548;
+    color: #183C28;
     height: fit-content;
 }
 
@@ -251,7 +238,7 @@
     margin: 10px auto auto auto;
     font-family: "Antic Didone", serif;
     font-size: 30px;
-    color: #806548;
+    color: #183C28;
     height: fit-content;
 }
 
@@ -259,7 +246,7 @@
     height: fit-content;
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
-    color: #806548;
+    color: #183C28;
     font-size: 20px;
     text-align: center;
 }
@@ -268,7 +255,7 @@
     height: fit-content;
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
-    color: #806548;
+    color: #183C28;
     text-align: center;
 }
 
@@ -278,7 +265,7 @@
     text-align: center;
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
-    color: #806548;
+    color: #183C28;
 }
 
 .waze-mairie{
@@ -292,7 +279,7 @@
 }
 
 .waze-mairie .waze-link{
-    color: #806548;
+    color: #183C28;
     font-family: "Antic Didone", serif;
     font-style: italic;
 }
@@ -306,18 +293,9 @@
 }
 
 .save-the-date-mairie .save-the-date-link{
-    color: #806548;
+    color: #183C28;
     font-family: "Antic Didone", serif;
     font-style: italic;
-}
-
-.fleur-fonce-bas{
-    width: 180px;
-    height: 230px;
-    position: absolute;
-    bottom: -10px;
-    right: -15px;
-    transform: rotate(45deg);
 }
 
 

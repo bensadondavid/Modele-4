@@ -9,9 +9,7 @@ function Chabat(){
 
     return(
 
-        <div className="chabat">
            <div className="chabat-card">
-                <img src="fleur-fonce-haut.png" className='fleur-fonce-haut' />
                 <h1 className='chabat-title'>LE CHABAT</h1>
                 <img src="logo-chabat.png" className='logo-chabat'/>
                 <div className="chabat-noms">
@@ -24,9 +22,7 @@ function Chabat(){
                 <p className='chabat-endroit'>A la synagogue Shaare Elyahou 13 guideon haozner<br />Jérusalem</p>
                 <Waze name={'waze-chabat'} lat={48.8525} long={2.3372} iconWidth='18px' iconHeight='25px' iconColor='#C6A58A' />
                 <SaveTheDate name={'save-the-date-chabat'} date={[2024, 6, 3, 12, 0]} iconColor='#C6A58A' iconHeight='18px' iconWidth='21px'/>
-                <img src="fleur-fonce-bas.png" className='fleur-fonce-bas' />
             </div>
-        </div>
 
     )
 }
