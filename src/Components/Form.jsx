@@ -6,7 +6,7 @@ import { ring } from 'ldrs';
 function Form(){
 
     ring.register();
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
 
     const { language } = useContext(Context)
 
@@ -19,7 +19,6 @@ function Form(){
         mairie : false,
         henne : false,
         houppa : false,
-        poolParty : false,
         chabat : false, 
         number : "",
         message : ''
@@ -56,7 +55,6 @@ function Form(){
                     mairie : false,
                     henne : false,
                     houppa : false,
-                    poolParty : false,
                     chabat : false, 
                     number : "",
                     message : ''
@@ -97,9 +95,6 @@ function Form(){
                             <label>
                             <input type="checkbox" name="houppa" checked={formData.houppa} onChange={handleChange} className='square-checkbox'/>
                             Houppa</label>
-                            <label>
-                            <input type="checkbox" name="poolParty" checked={formData.poolParty} onChange={handleChange} className='square-checkbox'/>
-                            Pool Party</label>
                             <label>
                             <input type="checkbox" name="chabat" checked={formData.chabat} onChange={handleChange} className='square-checkbox'/> 
                             Chabat</label>
