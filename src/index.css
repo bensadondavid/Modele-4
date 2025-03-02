@@ -13,7 +13,7 @@
 .too-big{
     width: 100%;
     height: 100vh;
-    background-image: url('/fond-element-haut.png');
+    background-image: url('/fond-vert.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +27,7 @@
     height: fit-content;
     font-family: 'Amsterdam', sans-serif;
     text-align: center;
+    color: #0B4022;
 }
 
 
@@ -154,7 +155,6 @@
     align-items: center;
     position: relative;
     background-image: url('/fond-vert.png');
-    background-repeat: repeat-y;
     background-size: cover;
 }
 
@@ -187,9 +187,9 @@
     height: 40px;
 }
 
-/* Mairie */
+/* Card */
 
-.mairie-card{
+.card{
     height: fit-content;
     border: none;
     display: flex;
@@ -198,7 +198,7 @@
     transform: translateY(-10%);
 }
 
-.mairie-title{
+.title{
     height: fit-content;
     color: #183C28;
     font-family: 'Amsterdam', sans-serif;
@@ -206,14 +206,13 @@
     text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
 }
 
-
-.mairie-noms{
+.noms{
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.mairie-nom-1, .mairie-nom-2, .mairie-and{
+.nom-1, .nom-2, .and{
     width: 100%;
     height: fit-content;
     font-family: 'Amsterdam', sans-serif;
@@ -223,18 +222,20 @@
     text-shadow: 2px 3px 2px rgba(0,0,0,0.3);
 }
 
-.mairie-and{
+.and{
     transform: translateX(10px);
 }
 
-.mairie-text{
+.text{
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
     color: #183C28;
     height: fit-content;
+    width: 80%;
+    text-align: center;
 }
 
-.mairie-oui{
+.oui{
     margin: 10px auto auto auto;
     font-family: "Antic Didone", serif;
     font-size: 30px;
@@ -242,7 +243,7 @@
     height: fit-content;
 }
 
-.mairie-date{
+.date{
     height: fit-content;
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
@@ -251,15 +252,16 @@
     text-align: center;
 }
 
-.mairie-endroit{
+.endroit{
     height: fit-content;
     margin: 40px auto auto auto;
     font-family: "Antic Didone", serif;
     color: #183C28;
     text-align: center;
+    width: 80%;
 }
 
-.mairie-suite{
+.suite{
     height: fit-content;
     width: 60%;
     text-align: center;
@@ -268,7 +270,7 @@
     color: #183C28;
 }
 
-.waze-mairie{
+.waze{
     margin: 30px auto auto auto;
     height: fit-content;
     display: flex;
@@ -278,13 +280,13 @@
     gap: 5px;
 }
 
-.waze-mairie .waze-link{
+.waze .waze-link{
     color: #183C28;
     font-family: "Antic Didone", serif;
     font-style: italic;
 }
 
-.save-the-date-mairie{
+.save-the-date{
     margin: 10px auto auto auto;
     height: fit-content;
     display: flex;
@@ -292,120 +294,8 @@
     gap: 5px;
 }
 
-.save-the-date-mairie .save-the-date-link{
+.save-the-date .save-the-date-link{
     color: #183C28;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-
-/* Henne */
-
-.henne{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-bas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.henne-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 120px 0;
-    background-color: #966A45;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-}
-
-
-.henne-title{
-    height: fit-content;
-    color: #402E20;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.henne-logo{
-    margin-top: 5px;
-    width: 45px;
-    height: 30px;
-}
-
-
-.henne-noms{
-    width: 100%;
-    color: #402E20;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px auto auto auto;
-}
-
-.henne-nom-1{
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.henne-and{
-    font-weight: 100;
-    font-size: 25px;
-    transform: translateX(-10px) translateY(10px);
-}
-
-.henne-nom-2{
-    height: fit-content;
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.henne-text, .henne-date, .henne-endroit{
-    font-family: "Antic Didone", serif;
-    text-align: center;
-    color: #402E20;
-    margin: 20px auto auto auto;
-}
-
-.waze-henne{
-    margin: 30px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.waze-henne .waze-link{
-    color: #402E20;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-.save-the-date-henne{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.save-the-date-henne .save-the-date-link{
-    color: #402E20;
     font-family: "Antic Didone", serif;
     font-style: italic;
 }
@@ -413,63 +303,9 @@
 
 /* Houppa */
 
-.houppa{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-haut.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-above-houppa{
-    width: 320px;
-    height: 140px;
-    margin: 20px auto 0 auto;
-}
-
-.kol-sasson{
-    height: auto;
-    width: auto;
-}
-
-.houppa-card{
-    height: fit-content;
-    width: 85%;
-    margin: 0 auto 30px auto;
-    padding: 120px 0;
-    background-color: #917F6C;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-    transform: translateY(-30px);
-}
-
-
-.houppa-title{
-    height: fit-content;
-    color: #271A11;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.houppa-logo{
-    margin-top: 5px;
-    height: 35px;
-    width: 30px;
+.kol-sasson-vert{
+    height: 110px ;
+    width: 90%;
 }
 
 .parents{
@@ -491,33 +327,6 @@
     font-size: small;
 }
 
-.houppa-noms{
-    width: 100%;
-    color: #271A11;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px auto auto auto;
-}
-
-.houppa-nom-1{
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.houppa-and{
-    font-weight: 100;
-    font-size: 25px;
-    transform: translateX(-10px) translateY(10px);
-}
-
-.houppa-nom-2{
-    height: fit-content;
-    font-size: 40px;
-    font-weight: 100;
-}
 
 .houppa-text{
     width: 80%;
@@ -527,19 +336,6 @@
     margin: 20px auto auto auto;
 }
 
-.houppa-date{
-    font-family: "Antic Didone", serif;
-    text-align: center;
-    color: #271A11;
-    margin: 20px auto auto auto;
-}
-
-.houppa-endroit{
-    font-family: "Antic Didone", serif;
-    text-align: center;
-    color: #271A11;
-    margin: 20px auto auto auto;
-}
 
 .pensee{
     margin: 20px auto auto auto;
@@ -547,336 +343,23 @@
     text-align: center;
     color: #271A11;
     font-style: italic;
-}
-
-.waze-houppa{
-    margin: 30px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.waze-houppa .waze-link{
-    color: #271A11;
-    font-family: "Antic Didone", serif;
-}
-
-.save-the-date-houppa{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.save-the-date-houppa .save-the-date-link{
-    color: #271A11;
-    font-family: "Antic Didone", serif;
-}
-
-
-/* Beach Party */
-
-.beach{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-bas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.beach-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 140px 0;
-    background-color: #DBC5A8;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-}
-
-
-.beach-title{
-    height: fit-content;
-    color: #5D412A;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.beach-logo{
-    margin-top: 5px;
-    width: 45px;
-    height: 40px;
-}
-
-
-.beach-noms{
-    width: 100%;
-    color: #806548;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px auto auto auto;
-}
-
-.beach-nom-1{
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.beach-and{
-    font-weight: 100;
-    font-size: 25px;
-    transform: translateX(-10px) translateY(10px);
-}
-
-.beach-nom-2{
-    height: fit-content;
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.beach-text{
-    width: 70%;
-}
-
-.beach-text, .beach-date, .beach-endroit, .beach-dress-code{
-    font-family: "Antic Didone", serif;
     text-align: center;
-    color: #5D412A;
-    margin: 20px auto auto auto;
+    width: 80%;
 }
-
-.waze-beach{
-    margin: 30px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.waze-beach .waze-link{
-    color: #5D412A;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-.save-the-date-beach{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.save-the-date-beach .save-the-date-link{
-    color: #5D412A;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-
-/* Chabat */
-
-.chabat{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-haut.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.chabat-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 120px 0;
-    background-color: #402E20;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-}
-
-
-.chabat-title{
-    height: fit-content;
-    color: #C6A58A;
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 5px;
-}
-
-.logo-chabat{
-    width: 40px;
-    height: 50px;
-}
-
-.chabat-noms{
-    color: #C6A58A;
-    font-family: 'Amsterdam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    margin: 90px auto auto auto;
-}
-
-.chabat-nom-1{
-    transform: translateY(-70px);
-    font-size: 50px;
-    font-weight: 100;
-}
-
-.chabat-and{
-    font-weight: 100;
-}
-
-.chabat-nom-2{
-    height: fit-content;
-    transform: translateY(10px);
-    font-size: 50px;
-    font-weight: 100;
-}
-
-
-.chabat-text{
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #C6A58A;
-    height: fit-content;
-    text-align: center;
-    width: 70%;
-}
-
-
-.chabat-date{
-    height: fit-content;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #C6A58A;
-    font-size: 20px;
-    text-align: center;
-}
-
-.chabat-endroit{
-    height: fit-content;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #C6A58A;
-    text-align: center;
-    width: 70%;
-}
-
-.chabat-suite{
-    height: fit-content;
-    width: 60%;
-    text-align: center;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #C6A58A;
-}
-
-.waze-chabat{
-    margin: 30px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.waze-chabat .waze-link{
-    color: #C6A58A;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
-.save-the-date-chabat{
-    margin: 10px auto auto auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.save-the-date-chabat .save-the-date-link{
-    color: #C6A58A;
-    font-family: "Antic Didone", serif;
-    font-style: italic;
-}
-
 
 /* Response */
 
-.response{
-    height: fit-content;
-    width: 100%;
-    background-image: url('/fond-element-bas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.response-card{
-    height: fit-content;
-    width: 85%;
-    margin: 60px auto 30px auto;
-    padding: 120px 0;
-    background-color: #E8D5BB;
-    border: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-}
-
 .response-title{
+    width: 100%;
+    margin: auto;
+    text-align: center;
     height: fit-content;
-    color: #402E20;
-    font-family: "Antic Didone", serif;
+    color: #183C28;
+    font-family: 'Amsterdam', sans-serif;
     font-weight: 400;
-    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
 }
-
-.reponse-souhaite{
-    font-family: "Italianno", serif;
-    font-size: larger;
-    margin-bottom: 20px;
-}
-
 
 /* Form */
 
@@ -884,11 +367,13 @@ form{
     height: fit-content;
     width: 100%;
     font-family: "Antic Didone", serif;
-    color: #402E20;
+    color: #183C28;
     display: flex;
     flex-direction: column;
     justify-content: center;
     letter-spacing: 2px;
+    margin: auto;
+    transform: translateY(-10%);
 }
 
 label{
@@ -899,8 +384,8 @@ label{
     width: 85%;
     height: 20px;
     padding: 10px;
-    background-color: #DBC5A8;
-    border: #5D412A solid 1px;
+    border: none;
+    background-color: rgba(11, 64, 34,0.6);
     border-top-left-radius: 50% 170px;
     border-top-right-radius: 50% 170px;
     border-bottom-left-radius: 50% 170px;
@@ -921,7 +406,7 @@ input[type = radio]{
     height: 15px;
     width: 15px;
     background-color: transparent; /* Couleur de fond */
-    border: 1px solid #5D412A; /* Bordure noire */
+    border: 1px solid #0B4022; /* Bordure noire */
     border-radius: 50%; /* Pas de bordure arrondie pour un effet carré */
     cursor: pointer;
     position: relative; /* Nécessaire pour positionner la flèche */
@@ -935,7 +420,7 @@ input[type = radio]{
     left: 4px; /* Position horizontale */
     width: 3px; /* Largeur de la flèche */
     height: 5px; /* Hauteur de la flèche */
-    border: solid #917F6C; /* Couleur de la flèche */
+    border: solid #0B4022; /* Couleur de la flèche */
     border-width: 0 2px 2px 0; /* Taille des lignes de la flèche */
     transform: rotate(45deg); /* Inclinaison pour créer une flèche */
 }
@@ -944,8 +429,8 @@ textarea{
     width: 85%;
     height: 40px;
     padding: 10px;
-    background-color: #DBC5A8;
-    border: #5D412A solid 1px;
+    background-color: rgba(11, 64, 34,0.6);
+    border: none;
     border-top-left-radius: 50% 170px;
     border-top-right-radius: 50% 170px;
     border-bottom-left-radius: 50% 170px;
@@ -956,10 +441,11 @@ textarea{
 .submit-button{
     height: 40px;
     width: 170px;
-    margin: 15px auto;
+    margin: 30px auto;
+    border: none;
     border-radius: 20px;
-    background-color: #402E20;
-    color: #C6A58A;
+    background-color: rgba(11, 64, 34,0.6);
+    color: #183C28;
     font-family: "Antic Didone", serif;
     letter-spacing: 2px;
 }
@@ -989,4 +475,10 @@ textarea{
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+}
+
+
+.fleurs-bas{
+    height: 150px;
+    width: 100%;
 }

@@ -7,11 +7,13 @@ function Response(){
     const { language } = useContext(Context)
 
     return(
-            <div className="response-card">
-                <h1 className="response-title">LA RÉPONSE</h1>
-                <p className='reponse-souhaite'>Réponse souhaitée dès réception</p>
+            <>
+                <div className="response-title">
+                    <h1>Réponse</h1>
+                    <img src="logo-y-l.png" className='logo-petit'/>
+                </div>
                 <Form />
-            </div>
+            </>
     )
 }
 

@@ -28,6 +28,7 @@ function Home(){
             <Chabat />
             <img src="fleurs-separation.png" className='fleurs-separation' />
             <Response />
+            <img src="fleurs-vertes-bas.png" className='fleurs-bas' />
         </div>
 
     )
