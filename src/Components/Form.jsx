@@ -25,11 +25,25 @@ function Form(){
     })
 
     const handleChange = (e)=>{
-        const { name,type, value, checked } = e.target
-        setFormData((prev)=>({
-            ...prev, 
-            [name]: type === 'checkbox' ? checked : value
-        }))
+        const { name, type, value, checked } = e.target;
+
+        setFormData((prev) => {
+            if (name === 'presence' && value === "n'assisteront pas") {
+                return {
+                    ...prev,
+                    presence: value,
+                    mairie: false,
+                    henne: false,
+                    houppa: false,
+                    chabat: false,
+                    number: "",
+                };
+            }
+            return {
+                ...prev,
+                [name]: type === 'checkbox' ? checked : value,
+            };
+        });
     }
 
     const handleSubmit = async (e)=>{
@@ -100,7 +114,7 @@ function Form(){
                             Chabat</label>
                         <div className="number">
                             <label>Nombre de personnes*
-                            <input type="number" name="number" value={formData.number} onChange={handleChange} className="person-number" required/>
+                            <input type="number" name="number" value={formData.number} onChange={handleChange} className="person-number" required={formData.presence === "assisteront"}/>
                             </label>
                         </div>
                     </div>
